@@ -4,7 +4,11 @@
   "main": "dist/ycm-cloud-music-redux.cjs.js",
   "module": "dist/ycm-cloud-music-redux.esm.js",
   "browser": "dist/ycm-cloud-music-redux.umd.js",
-  "author": "YouChunMing <youyou89325@163.com>",
+  "author": "YouChunMing <youyou89325@163.com> (https://github.com/YouChunMing)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YouChunMing/ycm-cloud-music-redux.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -27,7 +31,8 @@
     "clean": "rimraf dist coverage types",
     "format": "prettier --write \"{src,test}/**/*.{js,ts}\" index.d.ts \"**/*.md\"",
     "lint": "eslint --ext js,ts src test",
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup -c"
   },
   "dependencies": {
     "core-js": "3",
@@ -36,5 +41,9 @@
     "redux-actions": "^2.6.5",
     "redux-immutable": "^4.0.0",
     "reselect": "^4.0.0"
-  }
+  },
+  "files": [
+    "dist/*.js",
+    "src"
+  ]
 }

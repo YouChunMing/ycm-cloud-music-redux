@@ -51,8 +51,9 @@ export default [
             { file: pkg.main, format: 'cjs', exports:'named'},
             { file: pkg.module, format: 'esm' }
         ],
-        external: ['redux', 'immutable'],
+        external: ['redux', 'immutable', 'redux-immutable', 'redux-actions', 'reselect'],
         plugins: [
+            commonjs(),
             babel({
                 exclude: 'node_modules/**' 
             })
