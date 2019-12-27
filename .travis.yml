@@ -1,0 +1,7 @@
+language: node_js
+node_js: 
+  - node
+install:
+  - yarn install
+script:
+  - yarn clean && yarn format && yarn lint && yarn test
