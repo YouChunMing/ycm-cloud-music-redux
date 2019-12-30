@@ -18,6 +18,6 @@ deploy:
   api_token: $API_TOKEN
   cleanup: false
   on:
-    tags: true
+    branch: master
   tag: latest
 branches: master
