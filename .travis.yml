@@ -10,6 +10,7 @@ script:
 before_deploy:
 - yarn build
 deploy:
+  edge: true
   provider: npm
   email: youyou89325@163.com
   api_key:
