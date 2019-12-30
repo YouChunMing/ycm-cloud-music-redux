@@ -14,4 +14,5 @@ deploy:
   cleanup: false
   provider: npm
   email: youyou89325@163.com
+  api_token: $API_TOKEN
 branches: master
