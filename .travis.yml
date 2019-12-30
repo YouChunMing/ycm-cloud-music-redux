@@ -16,6 +16,5 @@ deploy:
     secure: iAPEUvJleslwBBLETk7tHiD7wD/L5fdKxn0VffyXit75iGiBq6W/jZewGNx4MO+6+0P/jlxfWnj9Oo3deXk6ddJCjB8ruTrLVpaAfq5MFFWMI+2+UFlMmGYUKC0XuURd1fmV+zlT+WNdNarkJbC2+lLxtFk17f4yOpE8BPfPsR/36MlA285GQYOTc3Tsx8pOGHyKBSyreujkN2de53mJRvsLB+NQiySJjZy4w2b0yt0q1/gWCOvglYUqi6XrpPEdgtK8vXQOG120o3FACIKX0/bGMjEItfh57nMm8ZxBAkGRbYKRMefGv3VoTTVYPKz1tJNsAfD62iJjH2JMHiT5I2A8tKsgDNbLeQmNunnQJy7EbRRZEw/09DxjF/kHpd/9P1A9lJClKMWfXGEbjeWjYqauTxEjdkC/yeVFgrvFLg5mENX2jDw2i30Pcv4zGVU9LgJjEqvgp4eRZLtuFmlPwBf2qqnLmtw2/0mAj5fQQYSk9kqMNie1cl+1+8rCdIkIL2S+8QhBk84hOGPFXd31NWEXjOHsuHs1U15ritl4UAB8mqCZAl4HpLZePzh9r/NdV0P0tz+0OVUOMU0GtaXdVEu7aTmzzKChFoYxxVx82tKvc81LXD518ChcDawRYzbLyPCzicIp2xREsKqEdLoClThHef+VQqYi4vsYyzNvfTc=
   on:
     branch: master
-    tags: true
     repo: YouChunMing/ycm-cloud-music-redux
 branches: master
