@@ -10,9 +10,8 @@ script:
 before_deploy:
 - yarn build
 deploy:
-  edge: true
-  cleanup: false
   provider: npm
   email: youyou89325@163.com
   api_token: $API_TOKEN
+  cleanup: false
 branches: master
