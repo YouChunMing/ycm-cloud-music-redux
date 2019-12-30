@@ -1,6 +1,6 @@
 {
   "name": "ycm-cloud-music-redux",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "dist/ycm-cloud-music-redux.cjs.js",
   "module": "dist/ycm-cloud-music-redux.esm.js",
   "browser": "dist/ycm-cloud-music-redux.umd.js",
