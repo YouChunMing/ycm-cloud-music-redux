@@ -11,9 +11,7 @@ before_deploy:
 - yarn build
 deploy:
   edge: true
+  cleanup: false
   provider: npm
   email: youyou89325@163.com
-  api_key: $NPM_TOKEN
-  on:
-    repo: YouChunMing/ycm-cloud-music-redux
 branches: master
