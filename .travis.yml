@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+- node
+cache:
+  yarn: true
+install:
+- yarn install
+script:
+- yarn clean && yarn format && yarn lint && yarn test
+before_deploy:
+- yarn build
+deploy:
+  provider: npm
+  email: youyou89325@163.com
+  api_key:
+    secure: OOU+Ap+kQyv/mJapbEo/fdNenqV+z3LCv2J2xBki4fOXKRRFmm9Mm8n0rVnMDKgY8w5pRyQlu1bClkkldyPO9VukgLnwG4mxmJPXMA4+QFN+BbEZveB65kk18jsUQB1kdPCMXw2DDAiLFIh+nsN7EAAwiTC34ZPwGDmjb4H12XM8o5L76DlmXRHaOgxjyP7J/ncfDb0/ttmblIy2t0elWoyRjXJr2mo4wZafGCySk3fKm6Z8/LAUjBEjutKcpWh3+x9AdW4wybY2GerOy7LxCUP4YCktSP5LFxeKh5gzlFTr1ZrvK82YqqqLFHzvnRucajh7DF7hkHkK0po+ToiCw2js5RCsSkqEyGsE1fFqwr8ucRlMgW6YuOeVCyw3zlBKmCcCykzlJIhlzmY1w9LPSEmepkTMxIFjEz99cMpHn7Xu6BLKpUfYyNI8h04r8QMGYJOJf0niAmZRN475oubYghWGkYXTZHJT6DxftzG4iN2RZC5+anTLZ7OLSojrkZh0G8zgwvqT2Clanowd1uflSdzsn9H8coMrzPR2e0957GvrmPhr8gdyRF92tJq+4TjnD67Ojt1nnG77DPFk8sdQrPjVpjZg+V6CYr9Hz1v/H9G+5kpVXgz76f9chEK+DjIS2ckZZoeHw+T9jLzs3HMtHEJ44CvyirZBMyWvOCOLvmI=
+  skip_cleanup: true
+  on:
+    tags: true
+  tag: latest
+branches: master
+env:
+  global:
+    secure: ObQAJEGrJI/UgI8xcYf2s9FqS90jUxgcLzOWxzzIRSP5JVZrcKhDnuM09nOkwAoKd2BBNVYGdWmaQ0gvCZFjczsQLnpRpdryVIUEmCymIwyUQ1OFLTRElCpkvJv2e1Q8dcpnpqeO55A915Zk6S6GqjnSQVwOwOC44eo4/jCgY8bL9lO1AMAElEutanwDH4I97WciYVMmgOQeGxlRF4OMaBzXacAzhWWEIKjoFIUMp3UnLHfzyaGcPug79Tptaw5fZxjPMK5DTNcwqXkcmRPunZWA0cjrWNYAS7J1KDe4otiadaID6X3H4DkalRqph9LgrkezZ8OLTQqa33mvUAQfOuZrTNLrYt1HhvzGfTb9THIqz5ovsKSbAxHKq95mgQ3HMJHUbvgtexxhmfwhFeBjceM2KZAH2BrcjxptpA63GyWCr40Xb6GrVQd3EjHXsnH2vQ/O9gduLy8qiq1Pmeg/OIMa2WHV/fsGBG9kGr+ReGo9sRnOD3UwkdP6vF8d8fpKeZtjymAXbBZegoMiULHXm1wAdxFhmJtbF0Y9K7QxTh34bX/tHuZ5FdWrhILbz/HALkg+bTHEqhNlaDk6LOTu9EE0XNn6vSKfu6J9afysGSlyDxH+Gna6Os4OgCiudF68M4O/uIIhmIOOiy5smlV1mvyv3D7WAK6eKgDkiDVDH3I=
