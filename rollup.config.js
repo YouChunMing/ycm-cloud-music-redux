@@ -51,7 +51,12 @@ export default [
             { file: pkg.main, format: 'cjs', exports:'named'},
             { file: pkg.module, format: 'esm' }
         ],
-        external: ['redux', 'immutable', 'redux-immutable', 'redux-actions', 'reselect'],
+        external: (id) => {
+            const specificList = ['redux', 'immutable', 'redux-immutable', 'redux-actions', 'reselect'];
+            const specificPattern = new RegExp(`^(${specificList.join('|')})($|/)`);
+            const externalPattern = new RegExp(`^core-js/modules`);
+            return specificPattern.test(id) || externalPattern.test(id);
+        },
         plugins: [
             commonjs(),
             babel({
