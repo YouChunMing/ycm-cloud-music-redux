@@ -13,18 +13,18 @@ const env = [
         proposals: true
       }
     }
-  ];
+];
   
-  const env_test = [
+const env_test = [
     "@babel/env",
     {
       targets: {
         node: 'current',
       },
     }
-  ];
-  
-  module.exports = api => {
+];
+
+module.exports = api => {
     
     let presets = [];
   
@@ -41,5 +41,5 @@ const env = [
       presets
     }
   
-  };
+};
     
