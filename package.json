@@ -41,7 +41,7 @@
     "reselect": "^4.0.0"
   },
   "files": [
-    "umd/*.js",
+    "umd",
     "es",
     "cjs",
     "src"
