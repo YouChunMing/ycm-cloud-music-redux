@@ -1,6 +1,6 @@
 {
   "name": "ycm-cloud-music-redux",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "cjs/ycm-cloud-music-redux.js",
   "module": "es/ycm-cloud-music-redux.js",
   "unpkg": "umd/ycm-cloud-music-redux.js",
@@ -41,7 +41,7 @@
     "reselect": "^4.0.0"
   },
   "files": [
-    "umd/*.js",
+    "umd",
     "es",
     "cjs",
     "src"
